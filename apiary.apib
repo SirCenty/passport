@@ -1,0 +1,52 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# passport
+
+for passport
+
+## Questions Collection [/passport]
+
+### Create a New User [POST]
+
++ Request (application/json)
+
+        {
+            "app_id": "114",
+            "userName": "2547233624189",
+            "firstName": "Bambi",
+            "deviceid": "Bambi",
+            "lastName": "Tip",
+            "email": "Bambi.tip@trip.co.le",
+            "mobile": "254723362418",
+            "isVerified": "true",    
+            "password": "hHEcIl4jKsB6xBwUfQtBshXsrDYE1mVvEQI5kX5N4XB4dkvU1/xV2W8d9q9w8zMxWcT2E9FBuNReracQXF38FEwar/KdiEARWCzGCtewOrzwsUcnyzX0DSGnhkQBti0OGHnQZjYv7tC8ANl6M3tby+kT+tb4vRRTzB9CtPsyBL8dbaeHGzlY1DlKRpTp7i8eG5qZKt8yO8A0smqswAMgnGtXM0wNi4gsoHkg7DVfRVnC6MfGSEHPybhMMNEkctsaRfJf0EJ5Do1ZCFLb0cOdSHuHMaEjYemJPaM97zIu3E4LLBktDV4qRh2A8OK3uv5BhJm/zJLUeq34aB4DeWWtVg=="
+        }
+
++ Response 500 (application/json)
+
+    + Headers
+
+            Location: /passport/users
+
+    + Body
+
+                
+            {
+                "responseCode": "99",
+                "responseMessage": "System error, please contact support"
+            }
+            
++ Response 200 (application/json)
+
+    + Headers
+
+            Location: /passport/users
+
+    + Body
+
+                
+            {
+                "responseCode": "00",
+                "responseMessage": "Successful"
+            }
