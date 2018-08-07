@@ -23,6 +23,21 @@ for passport
             "password": "hHEcIl4jKsB6xBwUfQtBshXsrDYE1mVvEQI5kX5N4XB4dkvU1/xV2W8d9q9w8zMxWcT2E9FBuNReracQXF38FEwar/KdiEARWCzGCtewOrzwsUcnyzX0DSGnhkQBti0OGHnQZjYv7tC8ANl6M3tby+kT+tb4vRRTzB9CtPsyBL8dbaeHGzlY1DlKRpTp7i8eG5qZKt8yO8A0smqswAMgnGtXM0wNi4gsoHkg7DVfRVnC6MfGSEHPybhMMNEkctsaRfJf0EJ5Do1ZCFLb0cOdSHuHMaEjYemJPaM97zIu3E4LLBktDV4qRh2A8OK3uv5BhJm/zJLUeq34aB4DeWWtVg=="
         }
 
++ Response 200 (application/json)
+
+    + Headers
+
+            Location: /passport/users
+
+    + Body
+
+                
+            {
+                "responseCode": "00",
+                "responseMessage": "Successful"
+            }
+            
+            
 + Response 500 (application/json)
 
     + Headers
@@ -37,11 +52,19 @@ for passport
                 "responseMessage": "System error, please contact support"
             }
             
+### Get Status [GET]
+
++ Request (application/json)
+
+   + Headers
+        
+            Location: /passport/status
+            
 + Response 200 (application/json)
 
     + Headers
 
-            Location: /passport/users
+            Location: /passport/status
 
     + Body
 
